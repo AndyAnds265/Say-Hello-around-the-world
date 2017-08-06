@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+<head>
+    <title>Site for languages nerds!</title>
+	<link rel="shortcut icon" type="image/png" a href="http://findicons.com/files/icons/126/sleek_xp_basic/128/world.png">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+      <style type="text/css">
+
+	body {
+		margin: 3px;
+	}
+
+	#aboutMe {
+		text-indent: 2.0em;
+	}
+
+	#txt {
+		text-align: right;
+		padding-top: 5px;
+		padding-right: 10px;
+	}
+
+
+	#headerbar {
+		background-color: gray;
+		height: 30px;
+	}
+
+	#headerbar2 {
+		background-color: gray;
+		height: 30px;
+	}
+
+	#headersection {
+
+	}
+	#headersection h1 {
+		text-align: center;
+	}
+
+
+	#headersection img {
+		padding-top: 5px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#langFam img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.flashCard {
+		width: 100%;
+		height: 250px;
+		padding-top: 25px;
+	}
+
+	#flashCard1 {
+		width: 200px;
+		height: 200px;
+		background-color: #007acc;
+		margin: auto;
+	}
+
+	#flashCard1 p {
+		text-align: center;
+		padding-top: 80px;
+	}
+
+	#flashCard2 {
+		width: 200px;
+		height: 200px;
+		background-color: green;
+		margin: auto;
+	}
+
+	#flashCard2 p {
+		text-align: center;
+		padding-top: 80px;
+	}
+
+	#flashCard3 {
+		width: 200px;
+		height: 200px;
+		background-color: orange;
+		margin: auto;
+	}
+
+	#flashCard3 p {
+		text-align: center;
+		padding-top: 80px;
+	}
+
+	#flashCard4 {
+		width: 200px;
+		height: 200px;
+		background-color: purple;
+		margin: auto;
+	}
+
+	#flashCard4 p {
+		text-align: center;
+		padding-top: 80px;
+	}
+
+	.movingFlashCard {
+		width: 100%;
+		height: 600px;
+	}
+
+	#movingFlashCard1 {
+		width: 200px;
+		height: 200px;
+		display: none;
+		background-color: gold;
+		position: relative;
+	}
+
+	#movingFlashCard1 p {
+		text-align: center;
+	}
+
+	</style>
+
+	<script>
+					function startTime() {
+					    var today = new Date();
+					    var h = today.getHours();
+					    var m = today.getMinutes();
+					    var s = today.getSeconds();
+					    m = checkTime(m);
+					    s = checkTime(s);
+					    document.getElementById('txt').innerHTML =
+					    h + ":" + m + ":" + s;
+					    var t = setTimeout(startTime, 500);
+					}
+					function checkTime(i) {
+					    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+					    return i;
+}
+		</script>
+
+
+</head>
+
+<body onload="startTime()">
+
+
+	<div id="headerbar">
+		<div id="txt"></div>
+	</div>
+	
+	<div id="headersection">
+
+		<h1>Hello Language World!</h1>
+
+ 		<a target="_blank" href="http://www.backpackingdiplomacy.com"><img height="250" src="https://upload.wikimedia.org/wikipedia/foundation/5/5d/Wikipedia-puzzleglobe-V2_bottom.png"></a>
+ 		</div>
+
+ 		<p align="center">“To learn a language is to have one more window from which to look at the world.” <br>-Charlemagne</p>
+	<div id="headerbar2">
+		
+	</div>
+ 
+ 	<h2>About this webiste</h2>
+ 	
+ 	<div id="aboutMe">
+ 	<p>
+ 		I have created this website to begin my work on creating things by integrating computers and natural languages. I am a language lover, localization professional, and travel blogger when I have time. You can check out my personal blog and see some of my travel videos by clicking the language globe in the header.<br><br> 
+
+ 		 <strong>Spoiler alert</strong>: Be prepared for a lot of quirky coding additions in here. I like to throw in additional features for challenges. <br><br>
+
+ 		<p align="center"><em>I hope you enjoy checking out this site!</em></p>
+
+ 	</p>
+ 		</div>
+
+ 	<hr>
+
+ 	<br>
+
+ 	<h2>What to expect?</h2>
+ 	In this website, you can expect the following: <br>
+ 	<ul>
+ 		<li>a brief overview of languages</li>
+ 		<li>some facts about languages</li>
+ 		<li>games about languages</li>
+ 		<li>more being added as often as I can</li>
+ 	</ul>
+ 	<br>
+ 	<hr>
+	<div id="langFam">
+	<h2 align="center">Language Overview</h2>
+<br>
+
+	<a target="_blank" href="https://en.wikipedia.org/wiki/Language_family"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Primary_Human_Language_Families_Map.png" height="150"></a></div>
+	<br>
+
+	<p>It is probably slightly difficult to ready, but the image above is of the language families in the world. The image (courtesy of <a target="_blank" href="https://en.wikipedia.org/wiki/Language_family">WikiPedia.org</a>) gives a great overview of the different language families of modern language. You can also reach the Wiki page by clicking the map image. It'll open a new window though, but don't worry, my amazing website will still be open in another window for you to keep reading &#128519;. <br><br>
+
+	If you are following the code until now, you'll notice that everything has been done in HTML and CSS. But soon, the real fun starts. Until then, let's give you some more insight into language families. <br><br>
+
+	There are roughly 147 language families in the world. Within those families, roughly 7,000 languages are in existence. That being said, the definition about what constitutes as a language varies and some considered dialects can also be considered as mutually intelligible with another. <em>An infamous example of this would be the distinction between Bosnian, Croatian, and Serbian. Before the dissolution of Yugoslavian block, these three languages were considered as one. In a tragic post-war era, the countries that were once united have taken measures to separate themselves for political reasons.</em><br><br>
+
+	Another unique example would be the case of mainland China. Colloquially, we often refer to Chinese as if it were 1 language that unites a people from China. Though that isn't entirely untrue if we are speaking in terms of the written language, there are nearly 300 different spoken languages in China by 56 different ethnic groups. In a country, with over a billion people there is a lot of linguistic diversity. China is a unique case though because 'Chinese' only has two variations of written form: simplified and traditional. So even if people on occassion cannot verbally communicate, they could in theory write to each other. Where there is a will there is a way. Right?
+
+	</p>
+<br>
+<hr>
+<br>
+
+<h1>Languages of our world</h1><br>
+
+<ul><h3>Quick facts:</h3>
+	<li><strong>Languages:</strong> around 7,000</li>
+	<li>Countries: 197 (<em>as recognized by the UN</em>)</li>
+	<li>Continents: <a target="_blank" href="https://en.wikipedia.org/wiki/Continent">7</a></li>
+
+	<li>
+	<a id="aLink" title="Click for fact!" href="#" onClick="alert('Did you know? The country with the most official languages in the world is Zimbabwe with 16.')">Click me for a pop up fact!!!</a>
+	</li>
+
+	<li>	<a id="aLink" title="Click for fact!" href="#" onClick="alert('Did you know? The country with the most spoken languaegs is Papua New Guinea with 820 known languages.')">Don't forget about me</a>
+
+	</li>
+
+		<!-- I am aware that the method above for creating an alert is not the best practice. I will attempt to fix better once I've learned how :). I also need to fix it so that it doesn't redirect to the top of page. Will fix in later versions.
+		//-->
+
+</ul><br>
+
+<hr> <br>
+
+<h2 align="center">How to say 'hello' and 'thank you' in a few languages</h2>
+
+<table align="center">
+	<tr>
+		<th>Language</th>&nbsp;<th>Hello</th>&nbsp;<th>Thank you</th>
+	</tr>
+	<tr>
+	<td>Español</td>&nbsp;<td>Hola</td>&nbsp;<td>Gracias</td>
+	</tr>
+	<tr>
+	<td>Italiano</td>&nbsp;<td>Ciao</td>&nbsp;<td>Grazie</td>
+	</tr>
+	<tr>
+		<td>Pу́сский</td>&nbsp;<td>привет</td>&nbsp;<td>Спасибо</td>
+	</tr>
+	<tr>
+		<td>فارسی</td>&nbsp;<td>سلام</td>&nbsp;<td>ممنون</td>
+	</tr>
+</table><br>
+
+<hr><br>
+	<h1>Language Quiz</h1>
+	<p>Let's test what you learned in the last section!</p>
+	<p><em>Write your answer in the blank.</em></p>
+	<br>
+
+	<p>(1) How do you say 'thank you' in Spanish/Español? (case sensitive)</p>
+	
+	
+
+<input id="question1" placeholder="type answer">
+	<button id="click">Click</button>
+	
+	<script type="text/javascript">
+
+	document.getElementById('click').onclick=function() {
+
+		if (document.getElementById('question1').value=="gracias") {
+			alert("Great job!");
+		} else {
+			alert("Please try again.");
+		}
+	}
+
+</script>
+<br>
+
+<p>(2) How do you say 'hello' in Italian/Italiano? (case sensitive, use lower case)</p>
+
+<input id="question2" placeholder="type answer">
+	<button id="click2">Click</button>
+	
+	<script type="text/javascript">
+
+	document.getElementById('click2').onclick=function() {
+
+		if (document.getElementById('question2').value=="ciao") {
+			alert("Fantastic!");
+		} else {
+			alert("Please try again.");
+		}
+	}
+
+</script>
+<br>
+<p>(3) How do you say 'thank you' in Farsi/فارسی? (you can copy and paste)</p>
+
+<input id="question3" placeholder="type answer">
+	<button id="click3">Click</button>
+	
+	<script type="text/javascript">
+
+	document.getElementById('click3').onclick=function() {
+
+		if (document.getElementById('question3').value=="ممنون") {
+			alert("Well done!");
+		} else {
+			alert("Please try again.");
+		}
+	}
+
+</script>
+<br><br>
+How did you do on the quiz?
+
+<input id="question4" placeholder="type answer">
+	<button id="click4">Rate my score</button>
+	
+	<script type="text/javascript">
+
+	document.getElementById('click4').onclick=function() {
+
+		if (document.getElementById('question4').value=="3") {
+			alert("You are a language genius!");
+		} else {
+			if (document.getElementById('question4').value=="2") {
+			alert("Almost there, just one more to get a perfect score!")
+			} else {
+			if (document.getElementById('question4').value=="1") {
+				alert("You can do better than that!")
+			} else{
+				if (document.getElementById('question4').value==value>3)
+				alert("There were only 3 questions.")
+			}
+			}
+			
+		}
+	}
+
+</script>
+	<hr>
+	<h1>Language flash cards</h1>
+	<br>
+		<p>(1) In the <font color="#007acc"><strong>blue</strong></font> box: which language is the text in? When you are ready, click in the blue box to find out!</p>
+
+		<div class="flashCard">
+			
+			<div id="flashCard1">
+				
+				<p id="holaCard">hola</p>
+
+			</div>
+
+				<script type="text/javascript">
+				
+					document.getElementById('flashCard1').onclick=function () {
+
+					document.getElementById('holaCard').innerHTML="Spanish";
+						}
+				</script>
+
+				</div>
+<br>
+
+<p>(2) In the <font color="green"><strong><em>green</em></strong></font> box: which language is the text in? When you are ready, click in the green box to find out!</p>
+
+		<div class="flashCard">
+			
+			<div id="flashCard2">
+				
+				<p id="приветCard">привет</p>
+
+			</div>
+
+				<script type="text/javascript">
+				
+					document.getElementById('flashCard2').onclick=function () {
+
+					document.getElementById('приветCard').innerHTML="Russian";
+						}
+				</script>
+
+				</div>
+<br>
+
+<p>(3) In the <font color="orange"><strong>orange</strong></font> box: which language is the text in? When you are ready, click in the orange box to find out!</p>
+
+		<div class="flashCard">
+			
+			<div id="flashCard3">
+				
+				<p id="salamCard">سلام</p>
+
+			</div>
+
+				<script type="text/javascript">
+				
+					document.getElementById('flashCard3').onclick=function () {
+
+					document.getElementById('salamCard').innerHTML="Farsi";
+
+					}
+				</script>
+
+				</div>
+
+				<br>
+
+	<p>(4) In the <font color="purple"><strong>purple</strong></font> box: which language is the text in? When you are ready, click in the purple box to find out!</p>
+
+		<div class="flashCard">
+			
+			<div id="flashCard4">
+				
+				<p id="grazieCard">grazie</p>
+
+			</div>
+
+				<script type="text/javascript">
+				
+					document.getElementById('flashCard4').onclick=function () {
+
+					document.getElementById('grazieCard').innerHTML="Italian";
+
+						if (document.getElementById('grazieCard')=="Italian") {
+							alert("Bravo");
+							//Need to revisit this. Pop-up needs to be set to a specified time, it isn't rendering, but thankfully doesn't break the code.
+						} else
+							alert("Forza azzurri! Go Blue!");
+									}
+					
+				</script>
+
+				</div>			
+<hr>
+
+<h1>Now, moving flash cards!</h1>
+<br>
+
+	<p>(1) Click the moving flash card as soon as you know the answer. You are being timed!</p>
+
+	<p>Your time:<span id="clickTime"></span>s</p>
+
+	<div class="movingFlashCard">
+			
+		<div id="movingFlashCard1">
+
+		<p id="movingFlashText"></p>
+
+		</div>
+		<script type="text/javascript">
+			
+			function randLang(){
+						var languages = new Array();
+					languages[0]="Spanish";
+					languages[1]="Italian";
+					languages[2]="Farsi";
+				
+  					var x = Math.floor(Math.random() * languages.length);
+  					return languages[x];
+										}
+
+				document.getElementById('box').onclick=function() {
+
+				document.getElementById('box').innerHTML=randLang();
+
+					}
+		</script>
+
+		<script type="text/javascript">
+
+
+					function getRandomColor() {
+		            var letters = '0123456789ABCDEF'.split('');
+		            var color = '#';
+		            for (var i = 0; i < 6; i++ ) {
+		                  color += letters[Math.round(Math.random() * 16)];
+		            							}
+		            return color;
+		            						}
+
+// here begins random language selector
+					
+
+
+					var clickedTime; var createdTime; var reactionTime
+
+			function makeBox() {
+
+				var time=Math.random();
+
+				time=time*3000;
+
+				setTimeout(function() {
+
+					if (Math.random()>0.5) {
+
+					document.getElementById('movingFlashCard1').style.borderRadius="100px";
+
+					} else {
+
+					document.getElementById('movingFlashCard1').style.borderRadius="0px";
+
+							}
+
+					var top=Math.random();
+
+					top=top*200;
+
+					var left=Math.random();
+
+					left=left*600;
+
+					document.getElementById('movingFlashCard1').style.top=top+"px";
+
+					document.getElementById('movingFlashCard1').style.left=left+"px";
+
+			
+
+					document.getElementById('movingFlashCard1').style.display="block";
+
+					createdTime=Date.now();
+
+										}, time);
+								}
+
+				document.getElementById('movingFlashCard1').onclick=function() {
+
+					clickedTime=Date.now();
+
+					reactionTime=(clickedTime-createdTime)/1000;
+
+					document.getElementById('clickTime').innerHTML=reactionTime;
+
+					document.getElementById('movingFlashCard1').style.backgroundColor=getRandomColor();
+
+					document.getElementById('movingFlashCard1').style.display="none";
+
+					makeBox();
+
+																				} 
+
+				makeBox();
+				// Additional challenges in future releases would be: (1) Use a triangle also in addition to a circle/square. (2) create a log of times for moving flash cards 
+				// (3) add new language card each time card reappears
+				// (4)
+
+		</script>
+
+
+	</div>
+
+<br><br><br><br>
+
+<div>
+	
+
+ <script type="text/javascript">
+ 	
+ 	// map of Asia with interactive pop ups
+
+ </script>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    
+
+
+
+<br><br><br><br><br><br><br><br><br>
+
+</body>
+	</html>
+
+
